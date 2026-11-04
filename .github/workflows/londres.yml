@@ -1,0 +1,34 @@
+name: Radar Londres
+
+on:
+  schedule:
+    - cron: "23 * * * *"   # toda hora, aos 23 minutos
+  workflow_dispatch:       # botão "Run workflow" para rodar à mão
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-londres
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Rodar o Radar Londres
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+        run: python londres.py
+      - name: Guardar os dados
+        run: |
+          git config user.name "radar-londres-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados
+          git diff --cached --quiet || (git commit -m "dados: leitura $(date -u +%Y-%m-%dT%H:%MZ)" && git push)
