@@ -1,4 +1,6 @@
 # Radar Londres - v1.1 (fase de teste)
+# v1.2: mostra no registro qual robo o token abre e quantas mensagens chegaram; Secret Flying
+#       com leitura tolerante (o feed as vezes vem com caracteres invalidos).
 # v1.1: quando descobre o dono, manda o quadro na mesma rodada; avisa se o Secret Flying falhar.
 # Mede os menores precos de ida e volta saindo de LONDRES (todos os aeroportos) para
 # 14 cidades do Brasil, em libras, guarda o historico de cada rota e avisa no Telegram
@@ -25,7 +27,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 
-VERSAO = "1.1"
+VERSAO = "1.2"
 TZ_LONDRES = ZoneInfo("Europe/London")
 ORIGEM = "LON"
 
@@ -195,6 +197,7 @@ def descobrir(estado, token):
     except Exception as erro:
         print(f"getUpdates falhou: {erro}")
         return
+    print(f"Telegram: {len(novidades or [])} novidade(s) recebida(s); dono={estado.get('dono')}; canal={estado.get('canal')}")
     for u in novidades or []:
         estado["offset"] = u["update_id"] + 1
         msg = u.get("message") or {}
@@ -369,15 +372,30 @@ def medir(estado, token, momento):
 
 def secret_flying(estado, token, momento, estreia):
     try:
-        raiz = ET.fromstring(baixar(SECRET_FLYING_RSS))
+        bruto = baixar(SECRET_FLYING_RSS).decode("utf-8", "replace")
     except Exception as erro:
         print(f"Secret Flying falhou: {erro}")
         estado["sf_erro"] = str(erro)[:200]
         return 0
+    if "<item" not in bruto:
+        print("Secret Flying: resposta sem ofertas (provável bloqueio a robôs). Início: " + bruto[:150].replace("\n", " "))
+        estado["sf_erro"] = "o site não entregou o feed (provável bloqueio a robôs)"
+        return 0
+    try:
+        itens = list(ET.fromstring(bruto).iter("item"))
+    except ET.ParseError:
+        # Feed com caractere invalido: le item por item, tirando so o que interessa
+        itens = []
+        for bloco in re.findall(r"<item>(.*?)</item>", bruto, re.S):
+            el = ET.Element("item")
+            for campo in ("title", "link", "pubDate"):
+                achado = re.search(rf"<{campo}>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</{campo}>", bloco, re.S)
+                ET.SubElement(el, campo).text = html.unescape(achado.group(1).strip()) if achado else ""
+            itens.append(el)
     estado["sf_erro"] = ""
     vistos = set(estado.get("sf_vistos", []))
     enviados = 0
-    for item in raiz.iter("item"):
+    for item in itens:
         titulo = (item.findtext("title") or "").strip()
         link = (item.findtext("link") or "").strip()
         chave = link or titulo
@@ -417,6 +435,11 @@ def main():
         raise SystemExit("Falta o secret TELEGRAM_TOKEN.")
     estado = carregar()
     momento = agora()
+    try:
+        robo = telegram("getMe", {}, token_tg)
+        print(f"Token do Telegram abre o robô: @{robo.get('username')}")
+    except Exception as erro:
+        print(f"Token do Telegram NÃO funcionou (getMe): {erro}")
     descobrir(estado, token_tg)
     estreia = estado.get("estreia", True)
 
