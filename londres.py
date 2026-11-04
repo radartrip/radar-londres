@@ -1,4 +1,5 @@
-# Radar Londres - v1.0 (fase de teste)
+# Radar Londres - v1.1 (fase de teste)
+# v1.1: quando descobre o dono, manda o quadro na mesma rodada; avisa se o Secret Flying falhar.
 # Mede os menores precos de ida e volta saindo de LONDRES (todos os aeroportos) para
 # 14 cidades do Brasil, em libras, guarda o historico de cada rota e avisa no Telegram
 # quando um preco cai bem abaixo do normal. Tambem le o Secret Flying (erros de tarifa)
@@ -24,7 +25,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 
-VERSAO = "1.0"
+VERSAO = "1.1"
 TZ_LONDRES = ZoneInfo("Europe/London")
 ORIGEM = "LON"
 
@@ -201,6 +202,7 @@ def descobrir(estado, token):
         if chat.get("type") == "private":
             if not estado.get("dono"):
                 estado["dono"] = chat["id"]
+                estado["estreia"] = True   # manda o quadro de estreia para o dono nesta rodada
                 enviar(chat["id"], "🛰️ <b>Radar Londres</b> ligado! Você é o dono: os bastidores "
                        "(quadro diário e avisos técnicos) chegam aqui.\n\nPróximo passo: crie o canal "
                        "e coloque este robô como administrador.", token)
@@ -370,7 +372,9 @@ def secret_flying(estado, token, momento, estreia):
         raiz = ET.fromstring(baixar(SECRET_FLYING_RSS))
     except Exception as erro:
         print(f"Secret Flying falhou: {erro}")
+        estado["sf_erro"] = str(erro)[:200]
         return 0
+    estado["sf_erro"] = ""
     vistos = set(estado.get("sf_vistos", []))
     enviados = 0
     for item in raiz.iter("item"):
@@ -419,7 +423,7 @@ def main():
     sf = secret_flying(estado, token_tg, momento, estreia)
 
     ultima = estado.get("ultima_leitura")
-    hora_de_medir = (not ultima) or (momento - datetime.fromisoformat(ultima) >= timedelta(minutes=INTERVALO_MIN))
+    hora_de_medir = estreia or (not ultima) or (momento - datetime.fromisoformat(ultima) >= timedelta(minutes=INTERVALO_MIN))
     if token_tp and hora_de_medir:
         alertas, quadro, falhas = medir(estado, token_tp, momento)
         estado["ultima_leitura"] = momento.isoformat()
@@ -435,6 +439,8 @@ def main():
             if estreia:
                 msg += (f"\n\nAlertas de queda começam depois de {MIN_LEITURAS} leituras por rota "
                         f"(cerca de {MIN_LEITURAS} horas).")
+            if estado.get("sf_erro"):
+                msg += "\n\n⚠️ Secret Flying não respondeu: " + html.escape(estado["sf_erro"])
             if falhas:
                 msg += "\n\n⚠️ Falhas: " + html.escape("; ".join(falhas))[:800]
             bastidores(estado, msg, token_tg)
