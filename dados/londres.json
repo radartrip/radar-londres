@@ -1,0 +1,70 @@
+{
+ "versao": "1.0",
+ "historico": {
+  "REC": [
+   {
+    "t": "2026-11-04T18:49:03.016610+00:00",
+    "preco": 1134,
+    "ida": "2026-11-16",
+    "volta": "2027-01-11",
+    "cia": "Iberia",
+    "escalas": 1,
+    "gaveta": "datas"
+   }
+  ],
+  "NAT": [
+   {
+    "t": "2026-11-04T18:49:03.016610+00:00",
+    "preco": 851,
+    "ida": "2027-09-06",
+    "volta": "2027-09-27",
+    "cia": "Swiss",
+    "escalas": 2,
+    "gaveta": "datas"
+   }
+  ],
+  "SAO": [
+   {
+    "t": "2026-11-04T18:49:03.016610+00:00",
+    "preco": 612,
+    "ida": "2026-11-25",
+    "volta": "2026-12-10",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
+   }
+  ],
+  "RIO": [
+   {
+    "t": "2026-11-04T18:49:03.016610+00:00",
+    "preco": 643,
+    "ida": "2027-03-04",
+    "volta": "2027-03-15",
+    "cia": "Avianca",
+    "escalas": 1,
+    "gaveta": "datas"
+   }
+  ],
+  "GYN": [
+   {
+    "t": "2026-11-04T18:49:03.016610+00:00",
+    "preco": 1225,
+    "ida": "2026-11-28",
+    "volta": "2027-01-09",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
+   }
+  ]
+ },
+ "ultimo_alerta": {},
+ "contador": 0,
+ "dono": null,
+ "canal": null,
+ "canal_nome": "",
+ "offset": 0,
+ "sf_vistos": [],
+ "ultimo_quadro": "2026-11-04",
+ "ultima_leitura": "2026-11-04T18:49:03.016610+00:00",
+ "estreia": false
+}
