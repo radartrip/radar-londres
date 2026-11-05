@@ -118,6 +118,15 @@
     "cia": "Iberia",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-05T09:21:09.270252+00:00",
+    "preco": 1133,
+    "ida": "2026-11-16",
+    "volta": "2027-01-11",
+    "cia": "Iberia",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "NAT": [
@@ -231,6 +240,15 @@
    },
    {
     "t": "2026-11-05T07:41:53.217849+00:00",
+    "preco": 851,
+    "ida": "2027-09-06",
+    "volta": "2027-09-27",
+    "cia": "Swiss",
+    "escalas": 2,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-05T09:21:09.270252+00:00",
     "preco": 851,
     "ida": "2027-09-06",
     "volta": "2027-09-27",
@@ -356,6 +374,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-05T09:21:09.270252+00:00",
+    "preco": 612,
+    "ida": "2026-11-25",
+    "volta": "2026-12-10",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -469,6 +496,15 @@
    },
    {
     "t": "2026-11-05T07:41:53.217849+00:00",
+    "preco": 603,
+    "ida": "2027-03-01",
+    "volta": "2027-03-10",
+    "cia": "FR",
+    "escalas": 3,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-05T09:21:09.270252+00:00",
     "preco": 603,
     "ida": "2027-03-01",
     "volta": "2027-03-10",
@@ -594,6 +630,15 @@
     "cia": "FR",
     "escalas": 4,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-05T09:21:09.270252+00:00",
+    "preco": 1228,
+    "ida": "2026-12-05",
+    "volta": "2027-01-09",
+    "cia": "FR",
+    "escalas": 4,
+    "gaveta": "datas"
    }
   ]
  },
@@ -604,8 +649,8 @@
  "canal_nome": "Radar Londres",
  "offset": 834995782,
  "sf_vistos": [],
- "ultimo_quadro": "2026-11-04",
- "ultima_leitura": "2026-11-05T07:41:53.217849+00:00",
+ "ultimo_quadro": "2026-11-05",
+ "ultima_leitura": "2026-11-05T09:21:09.270252+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
