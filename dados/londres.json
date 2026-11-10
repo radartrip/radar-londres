@@ -982,6 +982,15 @@
     "cia": "TAP",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-10T09:10:49.133812+00:00",
+    "preco": 1184,
+    "ida": "2026-11-16",
+    "volta": "2027-01-11",
+    "cia": "TAP",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "NAT": [
@@ -2759,6 +2768,15 @@
     "cia": "FR",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-10T09:10:49.133812+00:00",
+    "preco": 634,
+    "ida": "2026-11-14",
+    "volta": "2026-11-22",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -3736,6 +3754,15 @@
    },
    {
     "t": "2026-11-10T07:34:45.260723+00:00",
+    "preco": 603,
+    "ida": "2027-03-01",
+    "volta": "2027-03-10",
+    "cia": "FR",
+    "escalas": 3,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-10T09:10:49.133812+00:00",
     "preco": 603,
     "ida": "2027-03-01",
     "volta": "2027-03-10",
@@ -4745,6 +4772,15 @@
     "cia": "W4",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-10T09:10:49.133812+00:00",
+    "preco": 854,
+    "ida": "2027-01-07",
+    "volta": "2027-02-10",
+    "cia": "W4",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ]
  },
@@ -4755,8 +4791,8 @@
  "canal_nome": "Radar Londres",
  "offset": 834995782,
  "sf_vistos": [],
- "ultimo_quadro": "2026-11-09",
- "ultima_leitura": "2026-11-10T07:34:45.260723+00:00",
+ "ultimo_quadro": "2026-11-10",
+ "ultima_leitura": "2026-11-10T09:10:49.133812+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
