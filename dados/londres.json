@@ -2017,6 +2017,15 @@
     "cia": "U2",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T22:55:29.101175+00:00",
+    "preco": 1246,
+    "ida": "2026-11-16",
+    "volta": "2027-01-11",
+    "cia": "U2",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "NAT": [
@@ -4829,6 +4838,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T22:55:29.101175+00:00",
+    "preco": 602,
+    "ida": "2027-03-08",
+    "volta": "2027-03-14",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -6847,6 +6865,15 @@
     "cia": "Avianca",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T22:55:29.101175+00:00",
+    "preco": 642,
+    "ida": "2027-04-30",
+    "volta": "2027-05-09",
+    "cia": "Avianca",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "GYN": [
@@ -7717,6 +7744,15 @@
    {
     "t": "2026-11-15T21:55:56.212629+00:00",
     "preco": 1299,
+    "ida": "2026-12-05",
+    "volta": "2027-01-09",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T22:55:29.101175+00:00",
+    "preco": 1298,
     "ida": "2026-12-05",
     "volta": "2027-01-09",
     "cia": "FR",
@@ -9076,6 +9112,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T22:55:29.101175+00:00",
+    "preco": 1178,
+    "ida": "2026-12-28",
+    "volta": "2027-01-10",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ]
  },
@@ -9087,7 +9132,7 @@
  "offset": 834995782,
  "sf_vistos": [],
  "ultimo_quadro": "2026-11-15",
- "ultima_leitura": "2026-11-15T21:55:56.212629+00:00",
+ "ultima_leitura": "2026-11-15T22:55:29.101175+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
