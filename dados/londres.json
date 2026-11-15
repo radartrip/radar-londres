@@ -1981,6 +1981,15 @@
     "cia": "U2",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T19:07:31.926079+00:00",
+    "preco": 1246,
+    "ida": "2026-11-16",
+    "volta": "2027-01-11",
+    "cia": "U2",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "NAT": [
@@ -4757,6 +4766,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T19:07:31.926079+00:00",
+    "preco": 602,
+    "ida": "2027-03-08",
+    "volta": "2027-03-14",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -6739,6 +6757,15 @@
     "cia": "Avianca",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T19:07:31.926079+00:00",
+    "preco": 642,
+    "ida": "2027-04-30",
+    "volta": "2027-05-09",
+    "cia": "Avianca",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "GYN": [
@@ -7572,6 +7599,15 @@
    },
    {
     "t": "2026-11-15T17:53:09.822537+00:00",
+    "preco": 1296,
+    "ida": "2026-12-05",
+    "volta": "2027-01-09",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T19:07:31.926079+00:00",
     "preco": 1296,
     "ida": "2026-12-05",
     "volta": "2027-01-09",
@@ -8840,6 +8876,15 @@
     "cia": "W4",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T19:07:31.926079+00:00",
+    "preco": 854,
+    "ida": "2027-01-07",
+    "volta": "2027-02-10",
+    "cia": "W4",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "FOR": [
@@ -8869,6 +8914,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-15T19:07:31.926079+00:00",
+    "preco": 1177,
+    "ida": "2026-12-28",
+    "volta": "2027-01-10",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ]
  },
@@ -8880,7 +8934,7 @@
  "offset": 834995782,
  "sf_vistos": [],
  "ultimo_quadro": "2026-11-15",
- "ultima_leitura": "2026-11-15T17:53:09.822537+00:00",
+ "ultima_leitura": "2026-11-15T19:07:31.926079+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
