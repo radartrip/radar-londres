@@ -5045,6 +5045,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-16T21:07:30.158981+00:00",
+    "preco": 602,
+    "ida": "2027-03-08",
+    "volta": "2027-03-14",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -7171,6 +7180,15 @@
     "cia": "Avianca",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-16T21:07:30.158981+00:00",
+    "preco": 642,
+    "ida": "2027-04-30",
+    "volta": "2027-05-09",
+    "cia": "Avianca",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "GYN": [
@@ -8148,6 +8166,15 @@
    },
    {
     "t": "2026-11-16T20:12:51.699239+00:00",
+    "preco": 1298,
+    "ida": "2026-12-05",
+    "volta": "2027-01-09",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-16T21:07:30.158981+00:00",
     "preco": 1298,
     "ida": "2026-12-05",
     "volta": "2027-01-09",
@@ -9616,6 +9643,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-16T21:07:30.158981+00:00",
+    "preco": 1178,
+    "ida": "2026-12-28",
+    "volta": "2027-01-10",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ]
  },
@@ -9627,7 +9663,7 @@
  "offset": 834995782,
  "sf_vistos": [],
  "ultimo_quadro": "2026-11-16",
- "ultima_leitura": "2026-11-16T20:12:51.699239+00:00",
+ "ultima_leitura": "2026-11-16T21:07:30.158981+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
