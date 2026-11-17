@@ -5234,6 +5234,15 @@
     "cia": "FR",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-17T23:12:36.172231+00:00",
+    "preco": 643,
+    "ida": "2027-03-05",
+    "volta": "2027-03-14",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -7549,6 +7558,15 @@
     "cia": "W4",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-17T23:12:36.172231+00:00",
+    "preco": 652,
+    "ida": "2027-03-06",
+    "volta": "2027-03-14",
+    "cia": "W4",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "GYN": [
@@ -8715,6 +8733,15 @@
    },
    {
     "t": "2026-11-17T22:13:41.997623+00:00",
+    "preco": 837,
+    "ida": "2027-01-18",
+    "volta": "2027-02-01",
+    "cia": "U2",
+    "escalas": 2,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-17T23:12:36.172231+00:00",
     "preco": 837,
     "ida": "2027-01-18",
     "volta": "2027-02-01",
@@ -10372,6 +10399,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-17T23:12:36.172231+00:00",
+    "preco": 1178,
+    "ida": "2026-12-28",
+    "volta": "2027-01-10",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ]
  },
@@ -10389,7 +10425,7 @@
  "offset": 834995782,
  "sf_vistos": [],
  "ultimo_quadro": "2026-11-17",
- "ultima_leitura": "2026-11-17T22:13:41.997623+00:00",
+ "ultima_leitura": "2026-11-17T23:12:36.172231+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
