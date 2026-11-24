@@ -6386,6 +6386,15 @@
     "cia": "W4",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-24T23:13:49.096724+00:00",
+    "preco": 588,
+    "ida": "2027-03-05",
+    "volta": "2027-03-14",
+    "cia": "W4",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -9853,6 +9862,15 @@
     "cia": "W4",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-24T23:13:49.096724+00:00",
+    "preco": 666,
+    "ida": "2026-12-03",
+    "volta": "2026-12-09",
+    "cia": "W4",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "GYN": [
@@ -12171,6 +12189,15 @@
    },
    {
     "t": "2026-11-24T22:16:25.028231+00:00",
+    "preco": 941,
+    "ida": "2027-06-16",
+    "volta": "2027-06-23",
+    "cia": "U2",
+    "escalas": 2,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-24T23:13:49.096724+00:00",
     "preco": 941,
     "ida": "2027-06-16",
     "volta": "2027-06-23",
@@ -15648,6 +15675,15 @@
     "cia": "W4",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-24T23:13:49.096724+00:00",
+    "preco": 810,
+    "ida": "2026-11-27",
+    "volta": "2026-11-30",
+    "cia": "W4",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "CWB": [
@@ -16388,6 +16424,15 @@
     "cia": "KLM",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-24T23:13:49.096724+00:00",
+    "preco": 986,
+    "ida": "2026-11-25",
+    "volta": "2026-12-01",
+    "cia": "KLM",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "BSB": [
@@ -17056,6 +17101,15 @@
     "cia": "W4",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-24T23:13:49.096724+00:00",
+    "preco": 816,
+    "ida": "2026-12-02",
+    "volta": "2026-12-10",
+    "cia": "W4",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "FLN": [
@@ -17085,6 +17139,15 @@
     "cia": "U2",
     "escalas": 3,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-24T23:13:49.096724+00:00",
+    "preco": 1167,
+    "ida": "2026-12-14",
+    "volta": "2026-12-17",
+    "cia": "U2",
+    "escalas": 3,
+    "gaveta": "datas"
    }
   ]
  },
@@ -17102,7 +17165,7 @@
  "offset": 834995782,
  "sf_vistos": [],
  "ultimo_quadro": "2026-11-24",
- "ultima_leitura": "2026-11-24T22:16:25.028231+00:00",
+ "ultima_leitura": "2026-11-24T23:13:49.096724+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
