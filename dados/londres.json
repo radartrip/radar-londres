@@ -6503,6 +6503,15 @@
     "cia": "W4",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-25T20:14:27.854145+00:00",
+    "preco": 588,
+    "ida": "2027-03-05",
+    "volta": "2027-03-14",
+    "cia": "W4",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -10087,6 +10096,15 @@
     "cia": "FR",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-25T20:14:27.854145+00:00",
+    "preco": 604,
+    "ida": "2027-03-06",
+    "volta": "2027-03-14",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "GYN": [
@@ -12522,6 +12540,15 @@
    },
    {
     "t": "2026-11-25T19:18:17.440140+00:00",
+    "preco": 1557,
+    "ida": "2026-12-14",
+    "volta": "2027-01-02",
+    "cia": "ITA",
+    "escalas": 2,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-25T20:14:27.854145+00:00",
     "preco": 1557,
     "ida": "2026-12-14",
     "volta": "2027-01-02",
@@ -16116,6 +16143,15 @@
     "cia": "W4",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-25T20:14:27.854145+00:00",
+    "preco": 810,
+    "ida": "2026-11-27",
+    "volta": "2026-11-30",
+    "cia": "W4",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "CWB": [
@@ -16973,6 +17009,15 @@
     "cia": "LATAM",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-25T20:14:27.854145+00:00",
+    "preco": 1035,
+    "ida": "2026-11-25",
+    "volta": "2026-12-01",
+    "cia": "LATAM",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "BSB": [
@@ -17758,6 +17803,15 @@
     "cia": "W4",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-25T20:14:27.854145+00:00",
+    "preco": 816,
+    "ida": "2026-12-02",
+    "volta": "2026-12-10",
+    "cia": "W4",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "FLN": [
@@ -17904,6 +17958,15 @@
     "cia": "U2",
     "escalas": 3,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-25T20:14:27.854145+00:00",
+    "preco": 1167,
+    "ida": "2026-12-14",
+    "volta": "2026-12-17",
+    "cia": "U2",
+    "escalas": 3,
+    "gaveta": "datas"
    }
   ]
  },
@@ -17921,7 +17984,7 @@
  "offset": 834995782,
  "sf_vistos": [],
  "ultimo_quadro": "2026-11-25",
- "ultima_leitura": "2026-11-25T19:18:17.440140+00:00",
+ "ultima_leitura": "2026-11-25T20:14:27.854145+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
