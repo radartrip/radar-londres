@@ -6836,6 +6836,15 @@
     "cia": "FR",
     "escalas": 1,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-27T23:13:28.392331+00:00",
+    "preco": 530,
+    "ida": "2027-03-05",
+    "volta": "2027-03-14",
+    "cia": "FR",
+    "escalas": 1,
+    "gaveta": "datas"
    }
   ],
   "RIO": [
@@ -10753,6 +10762,15 @@
     "cia": "FR",
     "escalas": 3,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-27T23:13:28.392331+00:00",
+    "preco": 535,
+    "ida": "2027-03-01",
+    "volta": "2027-03-10",
+    "cia": "FR",
+    "escalas": 3,
+    "gaveta": "datas"
    }
   ],
   "GYN": [
@@ -13527,6 +13545,15 @@
     "cia": "FR",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-27T23:13:28.392331+00:00",
+    "preco": 905,
+    "ida": "2027-01-22",
+    "volta": "2027-01-23",
+    "cia": "FR",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "VIX": [
@@ -16063,6 +16090,15 @@
    },
    {
     "t": "2026-11-27T22:15:08.093401+00:00",
+    "preco": 1354,
+    "ida": "2026-12-25",
+    "volta": "2027-01-05",
+    "cia": "Air France",
+    "escalas": 1,
+    "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-27T23:13:28.392331+00:00",
     "preco": 1354,
     "ida": "2026-12-25",
     "volta": "2027-01-05",
@@ -19198,6 +19234,15 @@
     "cia": "W4",
     "escalas": 2,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-27T23:13:28.392331+00:00",
+    "preco": 816,
+    "ida": "2026-12-02",
+    "volta": "2026-12-10",
+    "cia": "W4",
+    "escalas": 2,
+    "gaveta": "datas"
    }
   ],
   "FLN": [
@@ -19677,6 +19722,15 @@
     "cia": "U2",
     "escalas": 3,
     "gaveta": "datas"
+   },
+   {
+    "t": "2026-11-27T23:13:28.392331+00:00",
+    "preco": 1167,
+    "ida": "2026-12-14",
+    "volta": "2026-12-17",
+    "cia": "U2",
+    "escalas": 3,
+    "gaveta": "datas"
    }
   ]
  },
@@ -19694,7 +19748,7 @@
  "offset": 834995782,
  "sf_vistos": [],
  "ultimo_quadro": "2026-11-27",
- "ultima_leitura": "2026-11-27T22:15:08.093401+00:00",
+ "ultima_leitura": "2026-11-27T23:13:28.392331+00:00",
  "estreia": false,
  "sf_erro": "o site não entregou o feed (provável bloqueio a robôs)"
 }
